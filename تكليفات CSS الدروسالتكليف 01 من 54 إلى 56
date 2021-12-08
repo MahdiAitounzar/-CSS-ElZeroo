@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    div::first-letter{
+      color: tomato;
+    }
+    div{
+      background-color: #eee;
+      width: 600px;
+      height: 100px;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 80px;
+      font-size: 40px;
+      box-shadow: -5px 0px 0px tomato,
+      5px 0px  0px purple;
+      position: relative;
+    }
+    div::before{
+      content: '';
+      background-image: linear-gradient(to right,tomato 20%,#03a9f4 20%,#03a9f4 40%, #009688 40%,#009688 60%,#c31130 60%,#c31130 80%,purple  80%);
+      background-color: rebeccapurple;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+    }
+    div::after{
+      content: '';
+      background-image: linear-gradient(to right,tomato 20%,#03a9f4 20%,#03a9f4 40%, #009688 40%,#009688 60%,#c31130 60%,#c31130 80%,purple  80%);
+      background-color: rebeccapurple;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div>Elzero</div>
+</body>
+</html>
